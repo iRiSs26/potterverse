@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lacquer:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Langar:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-lacquer: Lacquer;
+  --font-langar: Langar;
+
+  /* font sizes */
+  --font-size-21xl: 40px;
+  --font-size-5xl: 24px;
+  --font-size-13xl: 32px;
+  --font-size-3xl: 22px;
+  --font-size-9xl: 28px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkkhaki-100: #afb681;
+}
