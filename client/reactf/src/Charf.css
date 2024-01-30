@@ -1,0 +1,11 @@
+.bc-name{
+    height: 450px;
+    width:375px;
+    position: absolute;
+   top: 20 20 50 50;
+    
+}
+.bg-name{
+    z-index: 0;
+  
+}
