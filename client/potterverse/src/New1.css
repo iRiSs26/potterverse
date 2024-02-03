@@ -1,4 +1,13 @@
+.header{
+    font-size: 30px;
+    background-color:black
 
+}
+.navigation-bar{
+    font-size: 20px;
+    background-color: black;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif */
+ }
 .logo1{
     margin-top: 125px;
     
@@ -6,6 +15,7 @@
 }
 .logo1 img{
      width: 100%; 
+     opacity: 50%;
      /* height: 50%;  */
    
 }
@@ -21,7 +31,7 @@
 }
 .text-left-of-logo2 {
     position: absolute;
-    top: 1300px; /* Adjust the top position as needed */
+    top: 1250px; /* Adjust the top position as needed */
     left: 100px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; /* Adjust the font size as needed */
@@ -29,6 +39,8 @@
 .text-overlay{
     font-size: 20px;
     color: rgb(238, 241, 243);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 .logo3 img{
     width:600px;
@@ -38,7 +50,7 @@
 }
 .text-right {
     position: absolute;
-    top: 1850px; /* Adjust the top position as needed */
+    top: 1700px; /* Adjust the top position as needed */
     left: 700px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; /* Adjust the font size as needed */
@@ -70,7 +82,7 @@
 }
 .text5{
     position: absolute;
-    top: 2950px; /* Adjust the top position as needed */
+    top: 2800px; /* Adjust the top position as needed */
     left: 700px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; 
@@ -83,7 +95,7 @@
 }
 .text6{
     position: absolute;
-    top: 3500px;
+    top: 3300px;
     left: 10px;
     color: white;
     font-size: 36px;
@@ -96,9 +108,23 @@
 }
 .text7{
     position: absolute;
-    top: 3850px;
+    top: 3700px;
     left: 700px;
     color: white;
     font-size: 36px;
     
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 6);
+    margin-top: 150px;
+    
+}
+.footer p{
+    font-size: 30px;
+    margin-left: 50px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: azure;
 }
