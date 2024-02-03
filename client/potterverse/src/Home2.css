@@ -1,0 +1,119 @@
+.ficfathom {
+    height: 43px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .f-r-a-m-e3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-6xs) 0 0;
+  }
+  .quizez {
+    height: 43px;
+    width: 125px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .t-e-x-t {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-smi);
+  }
+  .chamber-of-chat {
+    height: 43px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .f-r-a-m-e2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-16xl);
+    max-width: 100%;
+  }
+  .news {
+    position: relative;
+    z-index: 2;
+  }
+  .f-r-a-m-e4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-5xs) 0 0;
+  }
+  .character-quotient,
+  .patronus {
+    position: relative;
+    display: inline-block;
+  }
+  .patronus {
+    height: 43px;
+    z-index: 2;
+  }
+  .character-quotient {
+    width: 342px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .f-r-a-m-e-wrapper,
+  .f-r-a-m-e1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .f-r-a-m-e1 {
+    justify-content: center;
+    gap: var(--gap-41xl);
+  }
+  .f-r-a-m-e-wrapper {
+    justify-content: flex-start;
+    padding: 0 var(--padding-5xs);
+    box-sizing: border-box;
+    min-height: 110px;
+    text-align: left;
+    font-size: var(--font-size-17xl);
+    color: var(--color-gold);
+    font-family: var(--font-lacquer);
+  }
+  @media screen and (max-width: 1350px) {
+    .f-r-a-m-e1 {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .chamber-of-chat,
+    .ficfathom,
+    .quizez {
+      font-size: var(--font-size-10xl);
+    }
+    .f-r-a-m-e2 {
+      flex-wrap: wrap;
+      gap: var(--gap-16xl);
+    }
+    .news,
+    .patronus {
+      font-size: var(--font-size-10xl);
+    }
+    .f-r-a-m-e1 {
+      gap: var(--gap-41xl);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .chamber-of-chat,
+    .ficfathom,
+    .news,
+    .patronus,
+    .quizez {
+      font-size: var(--font-size-3xl);
+    }
+  }
