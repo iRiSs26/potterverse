@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './New1.css'
 import logo from './th1.jpg';
-import logo1 from './rec13.jpg'
+import logo1 from './wallp.jpg'
 import logo2 from './rec17.jpg';
 import logo3 from './rec18.jpg';
 import logo4 from './rec15.jpg';
@@ -26,7 +26,7 @@ function New1() {
         <div className="navigation-bar">
 
 <a href="#">Quiz</a>
-<a href="#">Charcter Quotient</a>
+<a href="#">Character Quotient</a>
 <a href="#">News</a>
 <a href="#">FicFathom</a>
 <a href="#">Chamber of Chat</a>
@@ -35,7 +35,7 @@ function New1() {
 </div>
 <div className="text-overlay">
                     <h1>Welcome</h1>
-                    <p>Step into the magical embrace of Potterverse, where wizards, witches, and Muggles unite! Uncover secrets, share enchanting tales, and immerse yourself in all the Harry Potter world. The magic awaits – join us on this spellbinding adventure!</p>
+                    <p>Step into the magical embrace of Potterverse, where wizards, witches, and Muggles unite! Uncover secrets, share enchanting tales, and immerse yourself in the Harry Potter world. The magic awaits – join us on this spellbinding adventure!</p>
                     <button className="learn-more-button">Learn More</button>
 </div>
        
@@ -96,6 +96,12 @@ function New1() {
                 <button className="learn-more-button">Learn More</button>
             </div>
             <img src={logo7}></img>
+        </div>
+        <div className='footer'>
+            <p>Contact Us</p>
+            <p>Visit Home</p>
+            <p>other Links</p>
+            
         </div>
         </>
 
