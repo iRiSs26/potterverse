@@ -16,6 +16,7 @@
 .logo1 img{
      width: 100%; 
      opacity: 50%;
+     
      /* height: 50%;  */
    
 }
@@ -31,7 +32,7 @@
 }
 .text-left-of-logo2 {
     position: absolute;
-    top: 1250px; /* Adjust the top position as needed */
+    top: 900px; /* Adjust the top position as needed */
     left: 100px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; /* Adjust the font size as needed */
@@ -50,14 +51,14 @@
 }
 .text-right {
     position: absolute;
-    top: 1700px; /* Adjust the top position as needed */
+    top: 1400px; /* Adjust the top position as needed */
     left: 700px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; /* Adjust the font size as needed */
 }
 .text-left {
     position: absolute;
-    top: 2250px; /* Adjust the top position as needed */
+    top: 1900px; /* Adjust the top position as needed */
     left: 10px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; /* Adjust the font size as needed */
@@ -72,7 +73,15 @@
 .learn-more-button{
     width: 250px;
     height: 40px;
-    /* border-radius: 20%; */
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    /* padding: 20px 30px; */
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-top: 10px;
+     border-radius: 8px;
 }
 .logo5 img{
     margin-top: 80px;
@@ -82,7 +91,7 @@
 }
 .text5{
     position: absolute;
-    top: 2800px; /* Adjust the top position as needed */
+    top: 2500px; /* Adjust the top position as needed */
     left: 700px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; 
@@ -95,7 +104,7 @@
 }
 .text6{
     position: absolute;
-    top: 3300px;
+    top: 3000px;
     left: 10px;
     color: white;
     font-size: 36px;
@@ -108,7 +117,7 @@
 }
 .text7{
     position: absolute;
-    top: 3700px;
+    top: 3350px;
     left: 700px;
     color: white;
     font-size: 36px;
