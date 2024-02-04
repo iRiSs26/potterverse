@@ -1,0 +1,114 @@
+.text1 ,.text4,.text5 {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    
+}
+.card{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 10px 8px aqua;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: rgb(207, 207, 229);
+    height: fit-content;
+    margin-left: 200px;
+}
+.card img{
+    width: 450px;
+    height: 350px;
+    
+    border-radius: 8px 8px 0 0;margin-top: 30px;
+
+}
+.text1 h1 {
+    margin: 10px;
+    
+}
+.card a{
+    margin: 10px;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.text2 ,.text3{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    
+}
+
+.card1{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 10px 8px aqua;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: rgb(207, 207, 229);
+    height: fit-content;
+    margin-left: 850px;
+}
+.card1 img, .card3 img ,.card4 img,.card5 img{
+    width: 450px;
+    height: 350px;
+    
+    border-radius: 8px 8px 0 0;
+    
+    
+
+}
+.card1 a ,.card3 a,.card4 a,.card5 a{
+    margin: 10px;
+}
+.text2 h1 {
+    margin: 10px;
+    
+}
+.card3{
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 8px rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: rgb(117, 66, 66);
+    height: fit-content;
+    margin-left: 200px;
+    margin-top: 600px;
+    position: relative;
+    top: 30px;
+}
+.text3{
+    color: white;
+}
+.text3 h1 .text4 h1 .text5 h1{
+    margin: 10px;
+}
+
+.card4{
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 8px rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: rgb(117, 66, 66);
+    /* height: fit-content; */
+    margin-left: 850px;
+    
+    
+}
+
+
+
+
