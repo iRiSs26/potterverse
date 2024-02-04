@@ -6,9 +6,10 @@ import Home from './Home.jsx'
 import New from './New.jsx'
 import New1 from './New1.jsx'
 import New2 from './New2.jsx'
+import Charf from './Charf.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <New2 />
+    <Charf />
   </React.StrictMode>,
 )
