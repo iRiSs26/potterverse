@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './New1.css'
 import logo from './th1.jpg';
-import logo1 from './rec13.jpg'
+import logo1 from './wallp.jpg'
 import logo2 from './rec17.jpg';
 import logo3 from './rec18.jpg';
 import logo4 from './rec15.jpg';
@@ -97,7 +97,43 @@ function New1() {
             </div>
             <img src={logo7}></img>
         </div>
+
+
+        <footer className='footer'>
+    <div className='containerf'>
+        <div className='row'>
+            <div className='footer-col'>
+                <h4>About us</h4>
+                <ul>
+                    <li><a href='#'>Our Services</a></li>
+                    <li><a href='#'>Privacy Policy</a></li>
+                </ul>
+
+            </div>
+            <div className='footer-col'>
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href='#'>FAQ</a></li>
+                    <li><a href='#'>Know More</a></li>
+                </ul>
+
+            </div>
+            <div className='footer-col'>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href='#'>Instagram</a></li>
+                    <li><a href='#'>Telegram</a></li>
+                </ul>
+
+            </div>
+            
+        </div>
+    </div>
+
+</footer>
         </>
+
+        
 
 
     )
