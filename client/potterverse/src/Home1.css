@@ -1,0 +1,86 @@
+.potter,
+.verse {
+  height: 72px;
+  width: 400px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 2;
+}
+.verse {
+  height: 70px;
+  width: 436px;
+}
+.frame-inner,
+.th-1-icon {
+  position: absolute;
+  max-height: 100%;
+}
+.frame-inner {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.th-1-icon {
+  height: calc(100% - 5px);
+  top: 3px;
+  bottom: 2px;
+  left: 632px;
+  border-radius: var(--br-11xl);
+  width: 176px;
+  object-fit: cover;
+  z-index: 2;
+}
+.vector-parent {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.f-r-a-m-e {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--padding-21xl) var(--padding-xl) var(--padding-21xl)
+    var(--padding-281xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-xl);
+  min-height: 178px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-white);
+  font-family: var(--font-lacquer);
+}
+@media screen and (max-width: 1350px) {
+  .f-r-a-m-e {
+    padding-left: var(--padding-131xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .f-r-a-m-e {
+    padding-left: var(--padding-56xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .f-r-a-m-e {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

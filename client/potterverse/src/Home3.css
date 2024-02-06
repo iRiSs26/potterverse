@@ -1,0 +1,197 @@
+.text-1706816290580-1-icon {
+    width: 385px;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .text-container {
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .step-into-the {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 996px;
+    height: 463px;
+    z-index: 1;
+  }
+  .learn-more,
+  .text-area-child {
+    position: relative;
+    max-width: 100%;
+  }
+  .text-area-child {
+    height: 83px;
+    width: 598px;
+    border-radius: var(--br-31xl);
+    background-color: var(--color-mediumpurple-200);
+    display: none;
+  }
+  .learn-more {
+    height: 59px;
+    flex: 1;
+    font-size: var(--font-size-29xl);
+    font-family: var(--font-lacquer);
+    color: var(--color-white);
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .text-area {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-sm) var(--padding-18xl) var(--padding-3xs)
+      var(--padding-17xl);
+    background-color: var(--color-mediumpurple-200);
+    position: absolute;
+    top: 449px;
+    left: 163px;
+    border-radius: var(--br-31xl);
+    width: 598px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    z-index: 2;
+  }
+  .text-area:hover {
+    background-color: var(--color-mediumpurple-100);
+  }
+  .rectangle-shape {
+    align-self: stretch;
+    height: 532px;
+    position: relative;
+    max-width: 100%;
+  }
+  .f-r-a-m-e6,
+  .question-box {
+    display: flex;
+    max-width: 100%;
+  }
+  .question-box {
+    width: 996px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-7xl);
+  }
+  .f-r-a-m-e6 {
+    width: 1042px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .explore-the-enchanting,
+  .input-box-icon {
+    position: relative;
+    max-width: 100%;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .explore-the-enchanting {
+    height: 456px;
+    width: 505px;
+    display: inline-block;
+    min-width: 505px;
+  }
+  .input-box-icon {
+    align-self: stretch;
+    height: 499px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .user-profile-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 var(--padding-4xl);
+    box-sizing: border-box;
+    min-width: 500px;
+    max-width: 100%;
+  }
+  .profile-container {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: var(--gap-43xl);
+    color: var(--color-gold);
+  }
+  .f-r-a-m-e5,
+  .profile-container,
+  .r-e-c-t-a-n-g-l-e {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .r-e-c-t-a-n-g-l-e {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-47xl);
+  }
+  .f-r-a-m-e5 {
+    width: 1392px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 var(--padding-9xl);
+    box-sizing: border-box;
+    min-height: 1437px;
+    text-align: center;
+    font-size: var(--font-size-29xl);
+    color: var(--color-white);
+    font-family: var(--font-lacquer);
+  }
+  @media screen and (max-width: 1150px) {
+    .explore-the-enchanting {
+      flex: 1;
+    }
+    .profile-container {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .explore-the-enchanting,
+    .learn-more,
+    .step-into-the {
+      font-size: var(--font-size-19xl);
+    }
+    .explore-the-enchanting {
+      min-width: 100%;
+    }
+    .user-profile-card {
+      min-width: 100%;
+    }
+    .profile-container {
+      gap: var(--gap-43xl);
+    }
+    .r-e-c-t-a-n-g-l-e {
+      gap: var(--gap-47xl);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .explore-the-enchanting,
+    .learn-more,
+    .step-into-the {
+      font-size: var(--font-size-10xl);
+    }
+    .profile-container {
+      gap: var(--gap-43xl);
+    }
+    .r-e-c-t-a-n-g-l-e {
+      gap: var(--gap-47xl);
+    }
+  }
