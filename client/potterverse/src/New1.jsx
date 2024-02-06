@@ -26,11 +26,7 @@ function New1() {
         <div className="navigation-bar">
 
 <a href="#">Quiz</a>
-<<<<<<< HEAD
 <a href="#">Charcter Quotient</a>
-=======
-<a href="#">Character Quotient</a>
->>>>>>> a923d3a893295506491d95b88b01944b556d30ae
 <a href="#">News</a>
 <a href="#">FicFathom</a>
 <a href="#">Chamber of Chat</a>
@@ -39,11 +35,7 @@ function New1() {
 </div>
 <div className="text-overlay">
                     <h1>Welcome</h1>
-<<<<<<< HEAD
                     <p>Step into the magical embrace of Potterverse, where wizards, witches, and Muggles unite! Uncover secrets, share enchanting tales, and immerse yourself in all the Harry Potter world. The magic awaits – join us on this spellbinding adventure!</p>
-=======
-                    <p>Step into the magical embrace of Potterverse, where wizards, witches, and Muggles unite! Uncover secrets, share enchanting tales, and immerse yourself in the Harry Potter world. The magic awaits – join us on this spellbinding adventure!</p>
->>>>>>> a923d3a893295506491d95b88b01944b556d30ae
                     <button className="learn-more-button">Learn More</button>
 </div>
        
@@ -67,12 +59,7 @@ function New1() {
        </div>
        <div className='logo3'>
         <div className='text-right'>
-<<<<<<< HEAD
         <p>Think you know your favorite Harry Potter characters inside out? Challenge your wizarding knowledge with our "How Well Do You Know Your Favorite Characters?"</p> 
-=======
-        <p>Think you know your favorite Harry Potter characters </p><p>
-            inside out? Challenge your wizarding knowledge with our</p><p> "How Well Do You Know Your Favorite Characters?"</p> 
->>>>>>> a923d3a893295506491d95b88b01944b556d30ae
         <button className="learn-more-button">Learn More</button>
                        
                     </div>
@@ -88,14 +75,9 @@ function New1() {
        </div>
        <div className='logo5'>
         <div className='text5'>
-<<<<<<< HEAD
             <p>Answer a few enchanting questions and let the magic unfold as we reveal your unique Patronus. </p>
 
         <button className="learn-more-button">Learn More</button>
-=======
-            <p>Answer a few enchanting questions and let the magic </p><p>unfold as we reveal your unique Patronus. </p>
-           <button className="learn-more-button">Learn More</button>
->>>>>>> a923d3a893295506491d95b88b01944b556d30ae
         </div>
         <img src={logo5}></img>
        </div>
@@ -115,7 +97,6 @@ function New1() {
             </div>
             <img src={logo7}></img>
         </div>
-<<<<<<< HEAD
 
 
         <footer className='footer'>
@@ -154,16 +135,6 @@ function New1() {
 
         
 
-=======
-        <div className='footer'>
-            <p>Contact Us</p>
-            <p>Visit Home</p>
-            <p>other Links</p>
-            
-        </div>
-        </>
-
->>>>>>> a923d3a893295506491d95b88b01944b556d30ae
 
     )
 }

@@ -97,7 +97,6 @@ function Charf() {
 
 
 
-<<<<<<< HEAD
     <footer className='footer'>
     <div className='containerf'>
         <div className='row'>
@@ -131,8 +130,6 @@ function Charf() {
 
 </footer>
 
-=======
->>>>>>> a923d3a893295506491d95b88b01944b556d30ae
     
 
 
