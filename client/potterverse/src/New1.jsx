@@ -26,7 +26,7 @@ function New1() {
         <div className="navigation-bar">
 
 <a href="#">Quiz</a>
-<a href="#">Character Quotient</a>
+<a href="#">Charcter Quotient</a>
 <a href="#">News</a>
 <a href="#">FicFathom</a>
 <a href="#">Chamber of Chat</a>
@@ -35,7 +35,7 @@ function New1() {
 </div>
 <div className="text-overlay">
                     <h1>Welcome</h1>
-                    <p>Step into the magical embrace of Potterverse, where wizards, witches, and Muggles unite! Uncover secrets, share enchanting tales, and immerse yourself in the Harry Potter world. The magic awaits – join us on this spellbinding adventure!</p>
+                    <p>Step into the magical embrace of Potterverse, where wizards, witches, and Muggles unite! Uncover secrets, share enchanting tales, and immerse yourself in all the Harry Potter world. The magic awaits – join us on this spellbinding adventure!</p>
                     <button className="learn-more-button">Learn More</button>
 </div>
        
@@ -59,8 +59,7 @@ function New1() {
        </div>
        <div className='logo3'>
         <div className='text-right'>
-        <p>Think you know your favorite Harry Potter characters </p><p>
-            inside out? Challenge your wizarding knowledge with our</p><p> "How Well Do You Know Your Favorite Characters?"</p> 
+        <p>Think you know your favorite Harry Potter characters inside out? Challenge your wizarding knowledge with our "How Well Do You Know Your Favorite Characters?"</p> 
         <button className="learn-more-button">Learn More</button>
                        
                     </div>
@@ -76,8 +75,9 @@ function New1() {
        </div>
        <div className='logo5'>
         <div className='text5'>
-            <p>Answer a few enchanting questions and let the magic </p><p>unfold as we reveal your unique Patronus. </p>
-           <button className="learn-more-button">Learn More</button>
+            <p>Answer a few enchanting questions and let the magic unfold as we reveal your unique Patronus. </p>
+
+        <button className="learn-more-button">Learn More</button>
         </div>
         <img src={logo5}></img>
        </div>
@@ -97,13 +97,43 @@ function New1() {
             </div>
             <img src={logo7}></img>
         </div>
-        <div className='footer'>
-            <p>Contact Us</p>
-            <p>Visit Home</p>
-            <p>other Links</p>
+
+
+        <footer className='footer'>
+    <div className='containerf'>
+        <div className='row'>
+            <div className='footer-col'>
+                <h4>About us</h4>
+                <ul>
+                    <li><a href='#'>Our Services</a></li>
+                    <li><a href='#'>Privacy Policy</a></li>
+                </ul>
+
+            </div>
+            <div className='footer-col'>
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href='#'>FAQ</a></li>
+                    <li><a href='#'>Know More</a></li>
+                </ul>
+
+            </div>
+            <div className='footer-col'>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href='#'>Instagram</a></li>
+                    <li><a href='#'>Telegram</a></li>
+                </ul>
+
+            </div>
             
         </div>
+    </div>
+
+</footer>
         </>
+
+        
 
 
     )

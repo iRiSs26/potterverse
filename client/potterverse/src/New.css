@@ -1,0 +1,104 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#3C0861;
+    padding: 15px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .center-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .left-side,
+  .right-side {
+    flex: 1;
+    text-align: center;
+  }
+  .navigation-bar {
+    position: fixed;
+    top: 95px; /* Adjust the top value based on your header height */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .navigation-bar a {
+    text-decoration: none;
+    color: white;
+  }
+  .background-below-navbar {
+    position: fixed;
+    top: 75px; 
+    left: 0;
+    width: 203vh;
+    height: calc(100vh - 95px);
+    overflow: hidden;
+    z-index: -1; 
+    position: relative; 
+    
+    
+    
+}
+  
+  .background-below-navbar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+   
+    
+   
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+  }
+  
+  .text-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .text-overlay p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  /* text-overlay button.learn-more-button {
+  
+} */
+
+
+
+.text-overlay .right-image {
+    position: absolute;
+    top: 150%;
+  
+    left: 70%;
+    height: 40vh;
+    width: 60vh;
+    transform: translate(0, -50%);
+   
+}
