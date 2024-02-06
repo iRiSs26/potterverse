@@ -59,7 +59,8 @@ function New1() {
        </div>
        <div className='logo3'>
         <div className='text-right'>
-        <p>Think you know your favorite Harry Potter characters inside out? Challenge your wizarding knowledge with our "How Well Do You Know Your Favorite Characters?"</p> 
+        <p>Think you know your favorite Harry Potter characters </p><p>
+            inside out? Challenge your wizarding knowledge with our</p><p> "How Well Do You Know Your Favorite Characters?"</p> 
         <button className="learn-more-button">Learn More</button>
                        
                     </div>
@@ -75,9 +76,8 @@ function New1() {
        </div>
        <div className='logo5'>
         <div className='text5'>
-            <p>Answer a few enchanting questions and let the magic unfold as we reveal your unique Patronus. </p>
-
-        <button className="learn-more-button">Learn More</button>
+            <p>Answer a few enchanting questions and let the magic </p><p>unfold as we reveal your unique Patronus. </p>
+           <button className="learn-more-button">Learn More</button>
         </div>
         <img src={logo5}></img>
        </div>

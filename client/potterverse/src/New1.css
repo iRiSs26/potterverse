@@ -1,15 +1,25 @@
 .header{
-    font-size: 30px;
-    background-color:black
+    /* font-size: 30px; */
+    background-color:rgb(53, 43, 43);
+    height: 10vh;
+    
 
 }
+.left-side{
+    font-size: 4rem;
+}
+.right-side{
+    font-size: 4rem;
+}
 .navigation-bar{
-    font-size: 20px;
-    background-color: black;
-    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif */
+    
+    background-color: rgb(39, 29, 29);
+     /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif */ 
+    
  }
+
 .logo1{
-    margin-top: 125px;
+    margin-top: 8rem;
     
     
 }
@@ -21,47 +31,48 @@
    
 }
 .logo2{
-    margin-left: 800px;
+    margin-left: 100vh;
   
-    margin-top: 100px;
-     ;
+    margin-top: 10vh;
+     
 }
 .logo2 img{
-    width: 700px;
-    height: 400px;
+    width: 90vh;
+    height: 60vh;
 }
 .text-left-of-logo2 {
     position: absolute;
-    top: 900px; /* Adjust the top position as needed */
-    left: 100px; /* Adjust the left position as needed */
-    color: white; /* Text color */
-    font-size: 36px; /* Adjust the font size as needed */
+    top: 55rem; 
+    left: 5rem; 
+    color: white; 
+    font-size: 2rem; 
 }
 .text-overlay{
     font-size: 20px;
-    color: rgb(238, 241, 243);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(221, 227, 69);
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     
 }
 .logo3 img{
-    width:600px;
-    height: 400px;
-    margin-left: 40px;
-    margin-top: 80px;
+    width:80vh;
+    height: 55vh;
+    margin-left: 4vh;
+    margin-top: 10vh;
 }
 .text-right {
     position: absolute;
-    top: 1400px; /* Adjust the top position as needed */
-    left: 700px; /* Adjust the left position as needed */
-    color: white; /* Text color */
-    font-size: 36px; /* Adjust the font size as needed */
+    top: 180vh; 
+    left: 90vh; 
+    color: white; 
+    font-size: 2rem; 
+    
 }
 .text-left {
     position: absolute;
-    top: 1900px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the left position as needed */
-    color: white; /* Text color */
-    font-size: 36px; /* Adjust the font size as needed */
+    top: 1900px; 
+    left: 10px; 
+    color: white; 
+    font-size: 2rem; 
 }
 .logo4 img{
     margin-top: 80px;
@@ -91,10 +102,10 @@
 }
 .text5{
     position: absolute;
-    top: 2500px; /* Adjust the top position as needed */
-    left: 700px; /* Adjust the left position as needed */
-    color: white; /* Text color */
-    font-size: 36px; 
+    top: 2500px; 
+    left: 700px; 
+    color: white; 
+    font-size: 4rem; 
 }
 .logo6 img{
     margin-top: 80px;
@@ -136,4 +147,31 @@
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 font-family: Georgia, 'Times New Roman', Times, serif;
 color: azure;
+}
+
+@media only screen and (max-width:600px){
+
+    .text-left-of-logo2{
+        font-size: 1rem;
+    }
+    
+    .text-overlay {
+        font-size: 14x;
+    }
+
+    .text-right,
+    .text-left,
+    .text5,
+    .text6,
+    .text7 {
+        font-size: 1rem;
+    }
+    .logo7 img{
+        width: 50vh;
+        height: 40vh;
+    
+    }
+    
+    
+
 }
