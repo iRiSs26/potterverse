@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './New2.css'
-import  logo from'./th1.jpg'
+import  logo from'./assets/th1.jpg'
 import logo1 from './hog.jpg'
 function New2() {
     const [count, setCount] = useState(0)
@@ -18,11 +18,11 @@ function New2() {
         <div className="navigation-bar">
 
 <a href="#">Quiz</a>
-<a href="#">Character Quotient</a>
-<a href="#">News</a>
+<a href="/info">Character Quotient</a>
+<a href="/news">News</a>
 <a href="#">FicFathom</a>
 <a href="#">Chamber of Chat</a>
-<a href="#">Patronus</a>
+<a href="/about">Patronus</a>
 
 </div>
 

@@ -1,0 +1,35 @@
+.text-overlay{
+    font-size: 1.5rem;
+    color: rgb(247, 241, 241);
+
+}
+.learn-more-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+    height: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navigation-bar{
+    background-color: rgb(141, 141, 86);
+    
+}
+.navigation-bar a{
+    font-size: 1.5rem;
+    color: rgb(11, 11, 11);
+}
+.logo1 img{
+    width: 100%;
+    /* height: fit-content; */
+    margin-top: 1vh;
+    
+    
+}
+.logo1{
+    opacity: 70%;
+}
+

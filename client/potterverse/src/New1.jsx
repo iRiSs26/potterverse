@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './New1.css'
-import logo from './th1.jpg';
+import logo from './assets/th1.jpg';
 import logo1 from './wallp.jpg'
 import logo2 from './rec17.jpg';
 import logo3 from './rec18.jpg';
@@ -26,11 +26,11 @@ function New1() {
         <div className="navigation-bar">
 
 <a href="#">Quiz</a>
-<a href="#">Charcter Quotient</a>
-<a href="#">News</a>
+<a href="/info">Character Quotient</a>
+<a href="/news">News</a>
 <a href="#">FicFathom</a>
 <a href="#">Chamber of Chat</a>
-<a href="#">Patronus</a>
+<a href="/about">Patronus</a>
 
 </div>
 <div className="text-overlay">
