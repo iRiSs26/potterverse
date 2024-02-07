@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './Charf.css';
-import logo from './th1.jpg'
+import logo from './assets/th1.jpg'
 import logo1 from './wal.jpg'
 import logo2 from './rec17.jpg'
+import {NavLink} from 'react-router-dom';
 function Charf() {
     const [count, setCount] = useState(0)
   
@@ -20,11 +21,12 @@ function Charf() {
         <div className="navigation-bar">
 
 <a href="#">Quiz</a>
-<a href="#">Character Quotient</a>
-<a href="#">News</a>
+{/* <NavLink to='./About'>quiz</NavLink> */}
+<a href="/info">Character Quotient</a>
+<a href="/news">News</a>
 <a href="#">FicFathom</a>
 <a href="#">Chamber of Chat</a>
-<a href="#">Patronus</a>
+<a href="/about">Patronus</a>
 
 </div>
 

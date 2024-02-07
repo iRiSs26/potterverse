@@ -1,0 +1,51 @@
+.App{
+    text-align: centre;
+}
+.question-card{
+    background-color: rgb(120, 80, 80);
+    /* background-image: url('./rec15.jpg'); */
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 16px;
+    color: rgb(30, 29, 29);
+    box-shadow: bisque;
+    height: 400px;
+}
+ul{
+    list-style: none;
+}
+li{
+    background-color: rgb(207, 178, 178);
+    padding: 0%16px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.question-text{
+    color: darkblue;
+    font-size:24px ;
+}
+.final-results{
+    background-color: gray; 
+    /* background-image: url('about.jpg'); */
+    padding: 16px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 16px;
+    color: rgb(9, 7, 7);
+    box-shadow: bisque;
+    /* color: aliceblue; */
+}
+button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}

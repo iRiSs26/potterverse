@@ -8,9 +8,15 @@ import New1 from './New1.jsx'
 import Rou from './Rou.jsx'
 import New2 from './New2.jsx'
 import Charf from './Charf.jsx'
+import About from './About.jsx'
+import { BrowserRouter } from 'react-router-dom'
+import News3 from './News3.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <New1 />
-  </React.StrictMode>,
+  <BrowserRouter>
+<React.StrictMode>
+    <Rou />
+  </React.StrictMode>
+  </BrowserRouter>
+  ,
 )
