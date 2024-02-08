@@ -11,6 +11,7 @@ import Charf from './Charf.jsx'
 import About from './About.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import News3 from './News3.jsx'
+import Quiz from './Quiz.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
