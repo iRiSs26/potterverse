@@ -18,7 +18,7 @@ const Rou =()=>{
             <Route path='info' element={<Charf/>}/>
             <Route path='about' element={<About/>}/>
             <Route path='latest' element={<News3/>}/>
-            <Route path='/snape' element={<Quiz/>}/>
+            <Route path='/quiz' element={<Quiz/>}/>
             {/* <Route component={Error}/> */}
         </Routes>
 

@@ -3,7 +3,7 @@ import './New1.css'
 import logo from './assets/th1.jpg';
 import logo1 from './wallp.jpg'
 import logo2 from './rec17.jpg';
-import logo3 from './rec18.jpg';
+import logo3 from './assets/rec18.jpg';
 import logo4 from './rec15.jpg';
 import logo5 from './rec14.jpg';
 import logo6 from './wal.jpg';
@@ -25,7 +25,7 @@ function New1() {
      </div> 
         <div className="navigation-bar">
 
-<a href="#">Quiz</a>
+<a href="/quiz">Quiz</a>
 <a href="/info">Character Quotient</a>
 <a href="/news">News</a>
 <a href="#">FicFathom</a>

@@ -3,14 +3,84 @@ import './About.css';
 import logo from './assets/th1.jpg'
 import logo1 from './about.jpg'
 import logo2 from './wal.jpg';
-// import {data} from './data';
+import React,{Component} from 'react';
+import { useEffect } from 'react';
+
 function About() {
-     const [count, setCount] = useState(0)
-    
+//      const [count, setCount] = useState(0);
+// const [word,setWord]=useState();
+//      useEffect(()=>{
+//         fetch('https://api.dictionaryapi.dev/api/v2/entries/en/hello')
+//         .then((response)=>response.json())
+//         .then((data)=>{
+
+//                 setWord(data[0].meanings);
+        
+//         console.log(data[0].meanings)
+//      });
+        // console.log('page loaded');
+
+//      },[]);
+     
+//----------------------------------------
+const charactersList = document.getElementById('charactersList');
+const searchBar = document.getElementById('searchBar');
+// const [characters, setCharacters] = useState(null);
+let hpCharacters = [];
+
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+
+    const filteredCharacters = hpCharacters.filter((character) => {
+        return (
+            character.name.toLowerCase().includes(searchString) ||
+            character.house.toLowerCase().includes(searchString)
+        );
+    });
+    displayCharacters(filteredCharacters);
+});
+
+const loadCharacters = async () => {
+    try {
+        const res = await fetch('https://hp-api.onrender.com/api/characters');
+        hpCharacters = await res.json();
+        displayCharacters(hpCharacters);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+const displayCharacters = (characters) => {
+    const htmlString =  characters
+        .map((character) => {
+            return `
+            <li class="character">
+                <h2>${character.name}</h2>
+                <h4>Ancestry:${character.ancestry}</h4>
+                <p>House:${character.house}</p>
+            <h3>Patronus:${character.patronus}</h3>
+                
+            <img src="${character.image}"></img>
+            </li>
+        `;
+        })
+        .join('');
+    charactersList.innerHTML = htmlString;
+};
+
+loadCharacters();
+
+
+     
 return (
         <>
-        
-        <div className="header">
+        {/* <div>hello there</div>
+        <div>here is a definition</div>
+        <div>here are the </div> */}
+{/* {word && word.map((meaning)=>{
+        return <p>{meaning.definitions[0].definition}</p> */}
+{/* })} */}
+         <div className="header">
       <div className="left-side">Potter</div>
       <div className="center-logo">
         
@@ -20,9 +90,9 @@ return (
      </div> 
         <div className="navigation-bar">
 
-<a href="#">Quiz</a>
-<a href="#">Character Quotient</a>
-<a href="#">News</a>
+<a href="/quiz">Quiz</a>
+<a href="info">Character Quotient</a>
+<a href="/news">News</a>
 <a href="#">FicFathom</a>
 <a href="#">Chamber of Chat</a>
 <a href="#">Patronus</a>
@@ -37,12 +107,27 @@ return (
 <div className='logo1'>
 <img src={logo1}></img>
 
-</div>
-
+</div> 
 
          
+
+ <div className="container22">  
+            <h1>&#x2728;Harry Potter Characters &#x2728;</h1>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search for a character"
+                />
+            </div>
+            <ul id="charactersList"></ul>
+          </div>  
+       
+
         </>
 
     )
 }
 export default About;
+
