@@ -74,21 +74,9 @@ function Fic() {
             [name]: value
         });
     };
-    useEffect(() => {
-        async function fetchChats() {
-            try {
-                const response = await axios.get('http://localhost:5000/api/developer/chats');
-                setChats(response.data);
-            } catch (error) {
-                console.error('Error fetching chats:', error);
-            }
-        }
-        fetchChats();
-    }, []);
 
     const handleSubmit = async event => {
         event.preventDefault();
-
         try {
             const response = await axios.post('http://localhost:5000/api/developer/chats', formData);
             console.log('Chat created:', response.data);
@@ -106,14 +94,24 @@ function Fic() {
         }
     };
 
-   
+    useEffect(() => {
+        async function fetchChats() {
+            try {
+                const response = await axios.get('http://localhost:5000/api/developer/chats');
+                setChats(response.data);
+            } catch (error) {
+                console.error('Error fetching chats:', error);
+            }
+        }
+        fetchChats();
+    }, []);
 
     return (
         <>
             <div className='header'>
                 <div className="left-side">Potter</div>
                 <div className="center-logo">
-                    <img src={logo} alt="Logo" style={{ width: '70px', height: 'auto', borderRadius: '5px' }} />
+                    <img src={logo} alt="Logo" style={{ width: '90px', height: 'auto', borderRadius: '15px' }} />
                 </div>
                 <div className="right-side">Verse</div>
             </div>
