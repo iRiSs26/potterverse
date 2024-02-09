@@ -6,6 +6,7 @@ import New2 from './New2';
 import About from './About'
 import News3 from './News3';
 import Quiz from './Quiz';
+import Fic from './Fic';
 const Rou =()=>{
     return (
         <>
@@ -19,6 +20,7 @@ const Rou =()=>{
             <Route path='about' element={<About/>}/>
             <Route path='latest' element={<News3/>}/>
             <Route path='/quiz' element={<Quiz/>}/>
+            <Route path='/fic' element={<Fic/>}/>
             {/* <Route component={Error}/> */}
         </Routes>
 
