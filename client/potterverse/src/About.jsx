@@ -7,22 +7,7 @@ import React,{Component} from 'react';
 import { useEffect } from 'react';
 
 function About() {
-//      const [count, setCount] = useState(0);
-// const [word,setWord]=useState();
-//      useEffect(()=>{
-//         fetch('https://api.dictionaryapi.dev/api/v2/entries/en/hello')
-//         .then((response)=>response.json())
-//         .then((data)=>{
 
-//                 setWord(data[0].meanings);
-        
-//         console.log(data[0].meanings)
-//      });
-        // console.log('page loaded');
-
-//      },[]);
-     
-//----------------------------------------
 const charactersList = document.getElementById('charactersList');
 const searchBar = document.getElementById('searchBar');
 // const [characters, setCharacters] = useState(null);
@@ -74,12 +59,7 @@ loadCharacters();
      
 return (
         <>
-        {/* <div>hello there</div>
-        <div>here is a definition</div>
-        <div>here are the </div> */}
-{/* {word && word.map((meaning)=>{
-        return <p>{meaning.definitions[0].definition}</p> */}
-{/* })} */}
+        
          <div className="header">
       <div className="left-side">Potter</div>
       <div className="center-logo">
@@ -111,7 +91,7 @@ return (
 
          
 
- <div className="container22">  
+  <div className="container22">  
             <h1>&#x2728;Harry Potter Characters &#x2728;</h1>
             <div id="searchWrapper">
                 <input
@@ -122,7 +102,7 @@ return (
                 />
             </div>
             <ul id="charactersList"></ul>
-          </div>  
+          </div>   
        
 
         </>

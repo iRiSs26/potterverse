@@ -2,39 +2,41 @@
     text-align: centre;
 }
 .question-card{
-    background-color: rgb(120, 80, 80);
+    background-color: rgb(203, 210, 73);
     /* background-image: url('./rec15.jpg'); */
     padding: 20px;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 16px;
-    color: rgb(30, 29, 29);
-    box-shadow: bisque;
-    height: 400px;
+    color: rgb(232, 226, 226);
+    box-shadow: rgb(234, 204, 168);
+    height: 700px;
+    
 }
 ul{
     list-style: none;
 }
 li{
-    background-color: rgb(207, 178, 178);
-    padding: 0%16px;
-    border: 3px solid white;
-    border-radius: 20px;
+    background-color: rgb(9, 9, 9);
+    padding: 16px;
+    border: 3px solid rgb(250, 248, 248);
+    border-radius: 10px;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 40px;
+    height: 40px;
 }
 .question-text{
-    color: darkblue;
-    font-size:24px ;
+    color: rgb(14, 14, 14);
+    font-size:30px ;
 }
 .final-results{
-    background-color: gray; 
+    background-color: rgb(146, 126, 126); 
     /* background-image: url('about.jpg'); */
     padding: 16px;
     width: 50%;
     margin: 0 auto;
     border-radius: 16px;
-    color: rgb(9, 7, 7);
+    color: rgb(223, 168, 168);
     box-shadow: bisque;
     /* color: aliceblue; */
 }
@@ -48,4 +50,17 @@ button{
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
+}
+.App h1{
+    font-size: 40px;
+    margin-left: 45rem;
+
+}
+.App h2{
+    font-size: 2rem;
+    margin-left: 43rem;
+}
+.question-card h2{
+    margin-left: 2px;
+    color: rgb(8, 9, 9);
 }

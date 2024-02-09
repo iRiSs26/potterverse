@@ -1,0 +1,74 @@
+.input-form {
+    margin-top: 40px;
+  }
+  
+  .input-form h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+  
+  .input-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-form label {
+    margin-bottom: 5px;
+  }
+  
+  .input-form input,
+  .input-form textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 80rem;
+    height: 100px;
+  }
+  
+  .input-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80rem;
+  }
+  
+  .input-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .previous-chats {
+    margin-top: 20px;
+  }
+  
+  .previous-chats h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .previous-chats ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .previous-chats li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .previous-chats li h3 {
+    margin-top: 0;
+  }
+  
+  .previous-chats li p {
+    margin: 5px 0;
+  }
+  
+  /* Add more styles as needed */
+  /* Add the following CSS rule to prevent horizontal overflow */
+body {
+    overflow-x: hidden;
+  }
+  

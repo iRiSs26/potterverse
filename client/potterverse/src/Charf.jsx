@@ -6,6 +6,8 @@ import logo2 from './rec17.jpg'
 import {NavLink} from 'react-router-dom';
 function Charf() {
     const [count, setCount] = useState(0)
+
+    
   
     return (
         <>
