@@ -19,7 +19,7 @@ function New1() {
       <div className="left-side">Potter</div>
       <div className="center-logo">
         
-         <img src={logo} alt="Logo" style={{ width: '70px', height: 'auto',borderRadius:'5px' }} />
+         <img src={logo} alt="Logo" style={{ width: '90px', height: 'auto',borderRadius:'15px' }} />
       </div>
       <div className="right-side">Verse</div>
      </div> 
@@ -46,9 +46,8 @@ function New1() {
 
 <div className='logo2'>
 <div className='text-left-of-logo2'>
-                        <p>Stay enchanted with the latest updates</p> 
-                        <p>from the Wizarding World!</p>
-                        <button className="learn-more-button">Learn More</button>
+                        <p>Stay enchanted with the latest</p><p> updates from the Wizarding </p><p>World!</p>
+                       <a href='/news'> <button className="learn-more-button">Learn More</button></a>
                     </div>
                     
 
@@ -59,23 +58,23 @@ function New1() {
        </div>
        <div className='logo3'>
         <div className='text-right'>
-        <p>Think you know your favorite Harry Potter characters inside out? Challenge your wizarding knowledge with our "How Well Do You Know Your Favorite Characters?"</p> 
-        <button className="learn-more-button">Learn More</button>
+        <p>Think you know your favorite Harry Potter</p><p> characters inside out? Challenge your</p><p> wizarding knowledge with our "How Well Do You</p><p> Know Your Favorite Characters?"</p> 
+        <a href='/quiz'><button className="learn-more-button">Learn More</button>
                        
-                    </div>
+                   </a> </div>
         
         <img src={logo3}></img>
        </div>
        <div className='logo4'>
         <div className='text-left'>
-            <p>Engage in enchanting conversations about your</p> <p>favorite movie moments, unravel the mysteries of the </p><p>Wizarding World, and share your spellbinding insights.</p>
+            <p>Engage in enchanting conversations about</p> <p>your favorite movie moments, unravel the </p><p>mysteries of the Wizarding World, </p><p>and share your spellbinding insights.</p>
             <button className="learn-more-button">Learn More</button>
         </div>
         <img src={logo4}></img>
        </div>
-       <div className='logo5'>
-        <div className='text5'>
-            <p>Answer a few enchanting questions and let the magic unfold as we reveal your unique Patronus. </p>
+       <div className='logo55'>
+        <div className='text55'>
+            <p>Answer a few enchanting questions and</p><p> let the magic unfold. </p>
 
         <button className="learn-more-button">Learn More</button>
         </div>
@@ -83,8 +82,8 @@ function New1() {
        </div>
         <div className='logo6'>
             <div className='text6'>
-                <p>Explore the enchanting profiles of your favorite</p> <p>wizards, witches, and magical beings</p>
-                <button className="learn-more-button">Learn More</button>
+                <p>Explore the enchanting profiles of your</p><p> favorite wizards,</p><p> witches, and magical beings.</p>
+                <a href='/about'><button className="learn-more-button">Learn More</button></a>
             </div>
             <img src={logo6}></img>
         </div>
@@ -93,7 +92,8 @@ function New1() {
             <div className='text7'>
                 <p>Dive into a sea of magical narratives as users</p> <p>share their fanfictions, casting new spells</p>
                 <p> and weaving tales beyond the pages of the</p> <p>Wizarding world..</p>
-                <button className="learn-more-button">Learn More</button>
+                <a href='/fic'>
+                <button className="learn-more-button">Learn More</button></a>
             </div>
             <img src={logo7}></img>
         </div>

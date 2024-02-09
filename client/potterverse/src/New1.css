@@ -6,12 +6,14 @@
     
 }
 .header{
-    background-color:rgb(8, 1, 1);
+    background-color:rgb(15, 8, 8);
     height: 10vh;
 }
 
 .navigation-bar{
     margin-top: 10px;
+    
+    
 }
 .logo1 img{
      width: 100%; 
@@ -33,14 +35,18 @@
 }
 .text-left-of-logo2 {
     position: absolute;
-    top: 950px; /* Adjust the top position as needed */
-    left: 200px; /* Adjust the left position as needed */
+    top: 900px; /* Adjust the top position as needed */
+    left: 300px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; /* Adjust the font size as needed */
+    font-family: "Miltonian Tattoo",serif;
+    font-size: 26px;
 }
 .text-overlay{
     font-size: 20px;
-    color: rgb(175, 198, 214);
+    color: rgb(237, 242, 246);
+    font-family: "Miltonian Tattoo",serif;
+
 }
 .logo3 img{
     width:550px;
@@ -48,20 +54,23 @@
     margin-left: 120px;
     border-radius: 15px;
     margin-top: 100px;
+    
 }
 .text-right {
     position: absolute;
-    top: 1350px; /* Adjust the top position as needed */
-    left: 700px; /* Adjust the left position as needed */
+    top: 1375px; /* Adjust the top position as needed */
+    left: 800px; /* Adjust the left position as needed */
     color: white; /* Text color */
-    font-size: 36px; /* Adjust the font size as needed */
+    font-size: 26px; /* Adjust the font size as needed */
+    font-family: "Miltonian Tattoo",serif;
 }
 .text-left {
+    font-family: "Miltonian Tattoo",serif;
     position: absolute;
-    top: 1800px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the left position as needed */
+    top: 1900px; /* Adjust the top position as needed */
+    left: 200px; /* Adjust the left position as needed */
     color: white; /* Text color */
-    font-size: 36px; /* Adjust the font size as needed */
+    font-size: 26px; /* Adjust the font size as needed */
 }
 .logo4 img{
     margin-top: 100px;
@@ -75,31 +84,43 @@
     /* width: 250px;
     height: 40px; */
     /* border-radius: 20%; */
-    width: 250px;
+      /* width: 250px;
     height: 40px;
     text-decoration: none;
     text-transform: uppercase;
     background-color: white;
-    color: rgb(12, 3, 3);
-    /* padding: 20px 30px; */
-    display: inline-block;
+    color: rgb(12, 3, 3); */
+                       /* padding: 20px 30px; */
+    /* display: inline-block;
     letter-spacing: 2px;
     margin-top: 10px;
-     border-radius: 8px;
+     border-radius: 8px; */
+
+     /* font-family: "Miltonian Tattoo",serif; */
+     text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    width: 250px
 }
-.logo5 img{
+.logo55 img{
     margin-top: 100px;
     margin-left: 120px;
     height: 400px;
     width: 550px;
     border-radius: 15px;
 }
-.text5{
+.text55{
+    font-family: "Miltonian Tattoo",serif;
     position: absolute;
-    top: 2550px; /* Adjust the top position as needed */
-    left: 700px; /* Adjust the left position as needed */
+    top: 2450px; /* Adjust the top position as needed */
+    left: 800px; /* Adjust the left position as needed */
     color: white; /* Text color */
-    font-size: 36px; 
+    font-size: 26px; 
 }
 .logo6 img{
     margin-top: 100px;
@@ -109,11 +130,12 @@
     border-radius: 15px;
 }
 .text6{
+    font-family: "Miltonian Tattoo",serif;
     position: absolute;
-    top: 3000px;
-    left: 10px;
+    top: 2925px;
+    left: 200px;
     color: white;
-    font-size: 36px;
+    font-size: 26px;
 }
 .logo7 img{
     margin-top: 100px;
@@ -124,11 +146,12 @@
     margin-left: 120px;
 }
 .text7{
+    font-family: "Miltonian Tattoo",serif;
     position: absolute;
-    top: 3350px;
-    left: 700px;
+    top: 3400px;
+    left: 800px;
     color: white;
-    font-size: 36px;
+    font-size: 26px;
     
 }
 .footer{
@@ -136,4 +159,19 @@
 }
 .text-overlay .learn-more-button{
     margin-top: 50px;
+}
+.navigation-bar a:hover {
+    color: #fff; 
+}
+.navigation-bar a {
+    font-size: 1.5rem;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+}
+
+.left-side {
+    font-family: "Protest Guerrilla",sans-serif;
+}
+.right-side{
+    font-family: "Protest Guerrilla",sans-serif;
 }

@@ -15,9 +15,10 @@
 }
 ul{
     list-style: none;
+    
 }
-li{
-    background-color: rgb(9, 9, 9);
+.ques li{
+    background-color: rgb(9, 5, 5);
     padding: 16px;
     border: 3px solid rgb(250, 248, 248);
     border-radius: 10px;
@@ -30,15 +31,18 @@ li{
     font-size:30px ;
 }
 .final-results{
-    background-color: rgb(146, 126, 126); 
+    background-color: rgb(200, 137, 137); 
     /* background-image: url('about.jpg'); */
     padding: 16px;
     width: 50%;
     margin: 0 auto;
     border-radius: 16px;
-    color: rgb(223, 168, 168);
+    color: rgb(16, 14, 14);
     box-shadow: bisque;
+    height: 300px;
+    
     /* color: aliceblue; */
+    /* margin-left: 2px; */
 }
 button{
     background-color: red;
@@ -47,20 +51,32 @@ button{
     padding: 16px 24px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     font-weight: bold;
+    margin: auto;
+    
 }
 .App h1{
     font-size: 40px;
-    margin-left: 45rem;
+    /* margin-left: 30rem; */
+    text-align: center;
 
 }
 .App h2{
     font-size: 2rem;
-    margin-left: 43rem;
+    /* margin-left: 43rem; */
+    text-align: center;
 }
 .question-card h2{
     margin-left: 2px;
     color: rgb(8, 9, 9);
+}
+.final-results h2 {
+    margin-left: 20px;
+    
+}
+.final-results h1{
+    margin-left: 20px;
+    color: black;
 }

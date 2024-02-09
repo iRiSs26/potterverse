@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
 body{
   background-color: black;
 }
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

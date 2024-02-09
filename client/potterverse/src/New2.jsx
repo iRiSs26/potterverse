@@ -11,7 +11,7 @@ function New2() {
         <div className="left-side">Potter</div>
       <div className="center-logo">
         
-         <img src={logo} alt="Logo" style={{ width: '70px', height: 'auto',borderRadius:'10px' }} />
+         <img src={logo} alt="Logo" style={{ width: '90px', height: 'auto',borderRadius:'15px' }} />
       </div>
       <div className="right-side">Verse</div>
      </div> 

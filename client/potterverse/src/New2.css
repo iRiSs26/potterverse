@@ -172,3 +172,9 @@ ul{
 .right-side{
     font-size: 3rem;
 }
+.center-logo img {
+    width: 70px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    /* Add any other styles you want for the logo */
+}
