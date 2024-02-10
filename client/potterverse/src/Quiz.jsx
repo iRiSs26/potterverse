@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import logo from './assets/th1.jpg';
-import logo1 from './assets/rec18.jpg';
+import logo1 from './park.jpg';
 // import React,{useState} from "react";
+import { NavLink } from 'react-router-dom';
 
 import './Quiz.css'
 
@@ -89,30 +90,25 @@ const restartGame = () => {
       </div>
       <div className="right-side">Verse</div>
      </div> 
-        <div className="navigation-bar">
-
-<a href="#">Quiz</a>
-{/* <NavLink to='./About'>quiz</NavLink> */}
-<a href="/info">Character Quotient</a>
-<a href="/news">News</a>
-<a href="#">FicFathom</a>
-<a href="#">Chamber of Chat</a>
-<a href="/about">Patronus</a>
-
-</div>
-
-<div className='logo1'>
-<div className="text-overlay">
+        
+<div className='navigation-bar'>
+                <NavLink to="/quiz">Quiz</NavLink>
+                <NavLink to="/about">Character Quotient</NavLink>
+                <NavLink to="/news">News</NavLink>
+                <NavLink to="/fic">FicFathom</NavLink>
+                <NavLink to="#">Chamber of Chat</NavLink>
+                <NavLink to="/latest">Patronus</NavLink>
+            </div>
+            <div className='logo1'>
+                <div className="text-overlay">
                     <h1>Welcome</h1>
                     <p>Grab your wand, don your robes, and prepare to immerse yourself in a world where anything is possible. Are you ready to prove your magical prowess?</p>
-                    <a href='#' className="btn">Let the quiz begin...</a>
+                    <NavLink to='#' className="btn">Let the quiz begin...</NavLink>
+                </div>
 
-                   
-</div>
-
-    
-    <img src={logo1}></img>
-</div>
+                <div className="image-container">
+                <img src={logo1} alt="Logo1" /></div>
+            </div>
 
 
 <div className='App'>
@@ -153,6 +149,35 @@ const restartGame = () => {
 
 
 </div>
+
+<footer className='footer'>
+            <div className='containerf'>
+                <div className='row'>
+                    <div className='footer-col'>
+                        <h4>About us</h4>
+                        <ul>
+                            <li><NavLink to='#'>Our Services</NavLink></li>
+                            <li><NavLink to='#'>Privacy Policy</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><NavLink to='#'>FAQ</NavLink></li>
+                            <li><NavLink to='#'>Know More</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><NavLink to='#'>Instagram</NavLink></li>
+                            <li><NavLink to='#'>Telegram</NavLink></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
 
         </>
     );
