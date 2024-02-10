@@ -1,59 +1,105 @@
 import { useState } from 'react';
 import './About.css';
 import logo from './assets/th1.jpg'
-import logo1 from './about.jpg'
+import logo1 from './wal.jpg'
 import logo2 from './wal.jpg';
 import React,{Component} from 'react';
 import { useEffect } from 'react';
-
+import { NavLink } from 'react-router-dom';
 function About() {
+// ----------------------------------
+// const charactersList = document.getElementById('charactersList');
+// const searchBar = document.getElementById('searchBar');
+// // const [characters, setCharacters] = useState(null);
+// let hpCharacters = [];
 
-const charactersList = document.getElementById('charactersList');
-const searchBar = document.getElementById('searchBar');
-// const [characters, setCharacters] = useState(null);
-let hpCharacters = [];
+// searchBar.addEventListener('keyup', (e) => {
+//     const searchString = e.target.value.toLowerCase();
 
-searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value.toLowerCase();
+//     const filteredCharacters = hpCharacters.filter((character) => {
+//         return (
+//             character.name.toLowerCase().includes(searchString) ||
+//             character.house.toLowerCase().includes(searchString)
+//         );
+//     });
+//     displayCharacters(filteredCharacters);
+// });
 
-    const filteredCharacters = hpCharacters.filter((character) => {
-        return (
-            character.name.toLowerCase().includes(searchString) ||
-            character.house.toLowerCase().includes(searchString)
-        );
-    });
-    displayCharacters(filteredCharacters);
-});
+// const loadCharacters = async () => {
+//     try {
+//         const res = await fetch('https://hp-api.onrender.com/api/characters');
+//         hpCharacters = await res.json();
+//         displayCharacters(hpCharacters);
+//     } catch (err) {
+//         console.error(err);
+//     }
+// };
 
-const loadCharacters = async () => {
-    try {
-        const res = await fetch('https://hp-api.onrender.com/api/characters');
-        hpCharacters = await res.json();
-        displayCharacters(hpCharacters);
-    } catch (err) {
-        console.error(err);
-    }
-};
-
-const displayCharacters = (characters) => {
-    const htmlString =  characters
-        .map((character) => {
-            return `
-            <li class="character">
-                <h2>${character.name}</h2>
-                <h4>Ancestry:${character.ancestry}</h4>
-                <p>House:${character.house}</p>
-            <h3>Patronus:${character.patronus}</h3>
+// const displayCharacters = (characters) => {
+//     const htmlString =  characters
+//         .map((character) => {
+//             return `
+//             <li class="character">
+//                 <h2>${character.name}</h2>
+//                 <h4>Ancestry:${character.ancestry}</h4>
+//                 <p>House:${character.house}</p>
+//             <h3>Patronus:${character.patronus}</h3>
                 
-            <img src="${character.image}"></img>
-            </li>
-        `;
-        })
-        .join('');
-    charactersList.innerHTML = htmlString;
-};
+//             <img src="${character.image}"></img>
+//             </li>
+//         `;
+//         })
+//         .join('');
+//     charactersList.innerHTML = htmlString;
+// };
 
-loadCharacters();
+// loadCharacters();
+// ---------------------------------------------
+
+useEffect(() => {
+    const loadCharacters = async () => {
+        try {
+            const res = await fetch('https://hp-api.onrender.com/api/characters');
+            const hpCharacters = await res.json();
+            displayCharacters(hpCharacters);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
+    const displayCharacters = (characters) => {
+        const charactersList = document.getElementById('charactersList');
+        const searchBar = document.getElementById('searchBar');
+
+        const htmlString = characters
+            .map((character) => {
+                return `
+                    <li class="character">
+                        <h2>${character.name}</h2>
+                        <h4>Ancestry: ${character.ancestry}</h4>
+                        <p>House: ${character.house}</p>
+                        <h3>Patronus: ${character.patronus}</h3>
+                        <img src="${character.image}" />
+                    </li>
+                `;
+            })
+            .join('');
+        charactersList.innerHTML = htmlString;
+
+        searchBar.addEventListener('keyup', (e) => {
+            const searchString = e.target.value.toLowerCase();
+            const filteredCharacters = characters.filter((character) => {
+                return (
+                    character.name.toLowerCase().includes(searchString) ||
+                    character.house.toLowerCase().includes(searchString)
+                );
+            });
+            displayCharacters(filteredCharacters);
+        });
+    };
+
+    loadCharacters();
+}, []);
 
 
      
@@ -68,26 +114,23 @@ return (
       </div>
       <div className="right-side">Verse</div>
      </div> 
-        <div className="navigation-bar">
-
-<a href="/quiz">Quiz</a>
-<a href="info">Character Quotient</a>
-<a href="/news">News</a>
-<a href="#">FicFathom</a>
-<a href="#">Chamber of Chat</a>
-<a href="#">Patronus</a>
-
-</div>
-<div className="text-overlay">
+        
+<div className='navigation-bar'>
+                <NavLink to="/quiz">Quiz</NavLink>
+                <NavLink to="/about">Character Quotient</NavLink>
+                <NavLink to="/news">News</NavLink>
+                <NavLink to="/fic">FicFathom</NavLink>
+                <NavLink to="#">Chamber of Chat</NavLink>
+                <NavLink to="/latest">Patronus</NavLink>
+            </div>
+            <div className='logo1'>
+                <div className="text-overlay">
                     <h1>Welcome</h1>
-                    <p>Welcome to our About Us page, </p><p>where we unveil the essence of our passion for </p><p>Harry Potter!</p>
-                    <button className="learn-more-button">Learn More</button>
-</div>
-       
-<div className='logo1'>
-<img src={logo1}></img>
-
-</div> 
+                    <p>Grab your wand, don your robes, and prepare to immerse yourself in a world where anything is possible. Are you ready to prove your magical prowess?</p>
+                    <NavLink to='#' className="btn">Get to know them...</NavLink>
+                </div>
+                <img src={logo1} alt="Logo1" />
+            </div>
 
          
 

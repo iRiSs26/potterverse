@@ -8,6 +8,7 @@ import logo4 from './rec15.jpg';
 import logo5 from './rec14.jpg';
 import logo6 from './wal.jpg';
 import logo7 from './rec16.jpg';
+import { NavLink } from 'react-router-dom';
 function New1() {
     const [count, setCount] = useState(0)
   
@@ -25,12 +26,14 @@ function New1() {
      </div> 
         <div className="navigation-bar">
 
-<a href="/quiz">Quiz</a>
-<a href="/info">Character Quotient</a>
-<a href="/news">News</a>
-<a href="#">FicFathom</a>
-<a href="#">Chamber of Chat</a>
-<a href="/about">Patronus</a>
+
+
+<NavLink to="/quiz">Quiz</NavLink>
+                <NavLink to="/about">Character Quotient</NavLink>
+                <NavLink to="/news">News</NavLink>
+                <NavLink to="/fic">FicFathom</NavLink>
+                <NavLink to="#">Chamber of Chat</NavLink>
+                <NavLink to="/latest">Patronus</NavLink>
 
 </div>
 <div className="text-overlay">
@@ -47,7 +50,8 @@ function New1() {
 <div className='logo2'>
 <div className='text-left-of-logo2'>
                         <p>Stay enchanted with the latest</p><p> updates from the Wizarding </p><p>World!</p>
-                       <a href='/news'> <button className="learn-more-button">Learn More</button></a>
+                       
+                       <NavLink to='/news'><button className="learn-more-button">Learn More</button></NavLink>
                     </div>
                     
 
@@ -59,9 +63,9 @@ function New1() {
        <div className='logo3'>
         <div className='text-right'>
         <p>Think you know your favorite Harry Potter</p><p> characters inside out? Challenge your</p><p> wizarding knowledge with our "How Well Do You</p><p> Know Your Favorite Characters?"</p> 
-        <a href='/quiz'><button className="learn-more-button">Learn More</button>
-                       
-                   </a> </div>
+       
+                    <NavLink to='/quiz'><button className="learn-more-button">Learn More</button></NavLink>
+                   </div> 
         
         <img src={logo3}></img>
        </div>
@@ -83,7 +87,8 @@ function New1() {
         <div className='logo6'>
             <div className='text6'>
                 <p>Explore the enchanting profiles of your</p><p> favorite wizards,</p><p> witches, and magical beings.</p>
-                <a href='/about'><button className="learn-more-button">Learn More</button></a>
+                
+                <NavLink to='/about'><button className="learn-more-button">Learn More</button></NavLink>
             </div>
             <img src={logo6}></img>
         </div>
@@ -92,45 +97,43 @@ function New1() {
             <div className='text7'>
                 <p>Dive into a sea of magical narratives as users</p> <p>share their fanfictions, casting new spells</p>
                 <p> and weaving tales beyond the pages of the</p> <p>Wizarding world..</p>
-                <a href='/fic'>
-                <button className="learn-more-button">Learn More</button></a>
+                {/* <a href='/fic'>
+                <button className="learn-more-button">Learn More</button></a> */}
+                <NavLink to='/fic'><button className="learn-more-button">Learn More</button></NavLink>
             </div>
             <img src={logo7}></img>
         </div>
 
 
-        <footer className='footer'>
-    <div className='containerf'>
-        <div className='row'>
-            <div className='footer-col'>
-                <h4>About us</h4>
-                <ul>
-                    <li><a href='#'>Our Services</a></li>
-                    <li><a href='#'>Privacy Policy</a></li>
-                </ul>
+       
 
+<footer className='footer'>
+            <div className='containerf'>
+                <div className='row'>
+                    <div className='footer-col'>
+                        <h4>About us</h4>
+                        <ul>
+                            <li><NavLink to='#'>Our Services</NavLink></li>
+                            <li><NavLink to='#'>Privacy Policy</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><NavLink to='#'>FAQ</NavLink></li>
+                            <li><NavLink to='#'>Know More</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><NavLink to='#'>Instagram</NavLink></li>
+                            <li><NavLink to='#'>Telegram</NavLink></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div className='footer-col'>
-                <h4>Get Help</h4>
-                <ul>
-                    <li><a href='#'>FAQ</a></li>
-                    <li><a href='#'>Know More</a></li>
-                </ul>
-
-            </div>
-            <div className='footer-col'>
-                <h4>Contact Us</h4>
-                <ul>
-                    <li><a href='#'>Instagram</a></li>
-                    <li><a href='#'>Telegram</a></li>
-                </ul>
-
-            </div>
-            
-        </div>
-    </div>
-
-</footer>
+        </footer>
         </>
 
         

@@ -1,55 +1,4 @@
-// import { useState } from 'react';
-// import logo from './assets/th1.jpg';
-// import logo1 from './rec15.jpg';
-// import './Fic.css'
-// import { useEffect } from 'react';
-// function Fic() {
-//     const [count, setCount] = useState(0)
-    
-  
-//     return (
-//         <>
-//         <div className='header'>
 
-// <div className="left-side">Potter</div>
-//       <div className="center-logo">
-        
-//          <img src={logo} alt="Logo" style={{ width: '70px', height: 'auto',borderRadius:'5px' }} />
-//       </div>
-//       <div className="right-side">Verse</div>
-//       </div>
-     
-//         <div className="navigation-bar">
-
-// <a href="#">Quiz</a>
-// {/* <NavLink to='./About'>quiz</NavLink> */}
-// <a href="/info">Character Quotient</a>
-// <a href="/news">News</a>
-// <a href="#">FicFathom</a>
-// <a href="#">Chamber of Chat</a>
-// <a href="/about">Patronus</a>
-
-// </div>
-// <div className="text-overlay">
-//                     <h1>Welcome</h1>
-//                     <p>Embark on a journey through the hallowed halls of Hogwarts as you delve into the lives of your favorite characters. From the courageous Harry Potter himself to the clever Hermione Granger and the loyal Ron Weasley, each character has a tale as captivating as a spell cast by Professor Dumbledore.</p>
-//                     <a href='#' class="btn">Read more...</a>
-
-                   
-// </div>
-
-// <div className='logo1'>
-//     <img src={logo1}>
-
-//     </img>
-// </div>
-
-
-    
-//         </>
-//     )
-// }
-// export default Fic;
 
 
 import React, { useState, useEffect } from 'react';
@@ -57,6 +6,7 @@ import axios from 'axios';
 import logo from './assets/th1.jpg';
 import logo1 from './rec15.jpg';
 import './Fic.css';
+import { NavLink } from 'react-router-dom';
 
 function Fic() {
     const [formData, setFormData] = useState({
@@ -81,7 +31,7 @@ function Fic() {
             const response = await axios.post('http://localhost:5000/api/developer/chats', formData);
             console.log('Chat created:', response.data);
             alert('Chat created successfully!');
-            // Optionally, you can clear the form fields after successful submission
+            
             setFormData({
                 title: '',
                 author: '',
@@ -90,9 +40,26 @@ function Fic() {
             fetchChats();
         } catch (error) {
             console.error('Error creating chat:', error);
-            alert('Error creating chat. Please try again.');
+            // alert('Error creating chat. Please try again.');
         }
     };
+
+// -------------------
+
+
+// const handleDeleteRecentChat = async () => {
+//     try {
+//         const response = await axios.delete('http://localhost:5000/api/developer/chats/recent');
+//         console.log('Recent chat deleted:', response.data);
+//         alert('Recent chat deleted successfully!');
+//         fetchChats();
+//     } catch (error) {
+//         console.error('Error deleting recent chat:', error);
+//         alert('Error deleting recent chat. Please try again.');
+//     }
+// };
+    
+    // ----------------------------
 
     useEffect(() => {
         async function fetchChats() {
@@ -116,19 +83,19 @@ function Fic() {
                 <div className="right-side">Verse</div>
             </div>
 
-            <div className="navigation-bar">
-                <a href="#">Quiz</a>
-                <a href="/info">Character Quotient</a>
-                <a href="/news">News</a>
-                <a href="#">FicFathom</a>
-                <a href="#">Chamber of Chat</a>
-                <a href="/about">Patronus</a>
+           
+            <div className='navigation-bar'>
+                <NavLink to="/quiz">Quiz</NavLink>
+                <NavLink to="/info">Character Quotient</NavLink>
+                <NavLink to="/news">News</NavLink>
+                <NavLink to="/fic">FicFathom</NavLink>
+                <NavLink to="#">Chamber of Chat</NavLink>
+                <NavLink to="/latest">Patronus</NavLink>
             </div>
-
             <div className="text-overlay">
                 <h1>Welcome</h1>
                 <p>Embark on a journey through the hallowed halls of Hogwarts as you delve into the lives of your favorite characters. From the courageous Harry Potter himself to the clever Hermione Granger and the loyal Ron Weasley, each character has a tale as captivating as a spell cast by Professor Dumbledore.</p>
-                <a href='#' className="btn">Read more...</a>
+                <NavLink to='#' className="btn">Read more...</NavLink>
             </div>
 
             <div className='logo1'>
@@ -136,7 +103,7 @@ function Fic() {
             </div>
 
             <div className="input-form">
-                <h2>Create New Chat</h2>
+                <h2>Upload New Fanfic</h2>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="title">Title:</label><br/>
@@ -155,16 +122,19 @@ function Fic() {
             </div>
 
             <div className="previous-chats">
-                <h2>Previous Chats</h2>
+                <h2>Previous FanFics</h2>
                 <ul>
                     {chats.map((chat, index) => (
                         <li key={index}>
                             <h3>{chat.title}</h3>
                             <p>Author: {chat.author.join(', ')}</p>
                             <p>{chat.text}</p>
+                            {/* <button onClick={() => handleDelete(chat._id)}>Delete</button> */}
                         </li>
                     ))}
                 </ul>
+                {/* <button onClick={handleDeleteRecentChat}>Delete Recent Chat</button> */}
+
             </div>
         </>
     );
