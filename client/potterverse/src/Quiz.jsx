@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from './assets/th1.jpg';
-import logo1 from './park.jpg';
+import logo1 from './hog.jpg';
 // import React,{useState} from "react";
 import { NavLink } from 'react-router-dom';
 
@@ -50,6 +50,24 @@ function Quiz() {
           ],
         },
         {
+          text: "Which character is revealed to be the true master of the Elder Wand in Harry Potter and the Deathly Hallows?",
+          options: [
+            { id: 0, text: "Severus Snape", isCorrect: false },
+            { id: 1, text: "Albus Dumbledore", isCorrect: true },
+            { id: 2, text: "Dolores Umbridge", isCorrect: false },
+            { id: 3, text: "Gilderoy Lockhart", isCorrect: false },
+          ],
+        },
+        {
+          text: " Which Horcrux is destroyed first by Harry, Ron, and Hermione in Harry Potter and the Deathly Hallows?",
+          options: [
+            { id: 0, text: "Tom Riddle's Diary", isCorrect: false },
+            { id: 1, text: "Marvolo Gaunts ring", isCorrect: false },
+            { id: 2, text: "Salazar Slytherins locket", isCorrect: true },
+            { id: 3, text: "Helga Hufflepuffs cup", isCorrect: false },
+          ],
+        },
+        {
           text: "Which potion does Harry obtain from Professor Slughorn's memory?",
           options: [
             { id: 0, text: "Polyjuice Potion", isCorrect: false },
@@ -61,23 +79,56 @@ function Quiz() {
       ];
 
 
-const optionClicked=(isCorrect)=>{
-    if(isCorrect){
-        setScore(score+1);
-    }
+// const optionClicked=(isCorrect)=>{
+//     if(isCorrect){
+//         setScore(score+1);
+//     }
 
-    if (currentQuestion + 1 < questions.length) {
-        setCurrentQuestion(currentQuestion + 1);
-      } else {
-        setFinalResults(true);
-      }
+//     if (currentQuestion + 1 < questions.length) {
+//         setCurrentQuestion(currentQuestion + 1);
+//       } else {
+//         setFinalResults(true);
+//       }
+// };
+
+// const restartGame = () => {
+//     setScore(0);
+//     setCurrentQuestion(0);
+//     setFinalResults(false);
+//   };
+
+// --------------
+
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
+// Shuffle the questions array
+const shuffledQuestions = shuffleArray(questions).slice(0, 5);
+
+const optionClicked = (isCorrect) => {
+  if (isCorrect) {
+      setScore(score + 1);
+  }
+
+  if (currentQuestion + 1 < shuffledQuestions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+  } else {
+      setFinalResults(true);
+  }
 };
 
 const restartGame = () => {
-    setScore(0);
-    setCurrentQuestion(0);
-    setFinalResults(false);
-  };
+  setScore(0);
+  setCurrentQuestion(0);
+  setFinalResults(false);
+};
+
+// --------------
 
   
     return (
@@ -119,7 +170,7 @@ const restartGame = () => {
         <div className='final-results'>
         <h1>Final results</h1>
         <h2>
-            {score} out of {questions.length} correct - ({(score/questions.length)*100}%)
+            {score} out of {5} correct - ({(score/5)*100}%)
             
         </h2>
         <button onClick={()=>restartGame()}>Restart Quiz</button>
@@ -132,7 +183,7 @@ const restartGame = () => {
 
 
 <div className='question-card'>
-    <h2>Question {currentQuestion +1} out of {questions.length}</h2>
+    <h2>Question {currentQuestion +1} out of { 5}</h2>
     <h3 className='question-text'>{questions[currentQuestion].text}</h3>
     <ul>
       <div className='ques'>

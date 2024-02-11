@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './Charf.css';
 import logo from './assets/th1.jpg'
-import logo1 from './wal.jpg'
-import logo2 from './rec17.jpg'
+import logo1 from './assets/wal.jpg'
+import logo2 from './assets/rec17.jpg'
 import {NavLink} from 'react-router-dom';
 function Charf() {
     const [count, setCount] = useState(0)

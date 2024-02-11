@@ -40,13 +40,19 @@
     left: 300px; /* Adjust the left position as needed */
     color: white; /* Text color */
     font-size: 36px; /* Adjust the font size as needed */
-    font-family: "Miltonian Tattoo",serif;
+     font-family: "Miltonian Tattoo",serif; 
     font-size: 26px;
+    /* font-family: 'Harry Potter', sans-serif; */
 }
 .text-overlay{
     font-size: 20px;
     color: rgb(237, 242, 246);
-    font-family: "Miltonian Tattoo",serif;
+     font-family: "Miltonian Tattoo",serif; 
+    position: absolute;
+    margin-top: 40px;
+    opacity: 75%;
+    /* font-family: 'Harry Potter', sans-serif; */
+    
 
 }
 .logo3 img{
@@ -160,6 +166,8 @@
 }
 .text-overlay .learn-more-button{
     margin-top: 50px;
+    /* font-family: 'Harry Potter', sans-serif; */
+   
 }
 .navigation-bar a:hover {
     color: #fff; 
@@ -171,17 +179,24 @@
 }
 
 .left-side {
-    font-family: "Protest Guerrilla",sans-serif;
+    /* font-family: "Protest Guerrilla",sans-serif; */
+    font-family: 'Harry Potter', sans-serif;
+    
+                                                
 }
 .right-side{
-    font-family: "Protest Guerrilla",sans-serif;
+    /* font-family: "Protest Guerrilla",sans-serif; */
+    font-family: 'Harry Potter', sans-serif;
+                                                
 }
 
 .navigation-bar {
-    background-color: gray !important; /* Change the background color to gray */
+    background-color: rgb(151, 147, 147) !important; /* Change the background color to gray */
     display: flex;
     justify-content: space-around;
     align-items: center;
     /* height: 10vh; */
     font-size: 1.5rem;
+     /* font-family: 'Harry Potter', sans-serif; */ 
+                                                
 }

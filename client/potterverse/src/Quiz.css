@@ -2,7 +2,7 @@
     text-align: centre;
 }
 .question-card{
-    background-color: rgb(203, 210, 73);
+    background-color: rgb(158, 158, 155);
     /* background-image: url('./rec15.jpg'); */
     padding: 20px;
     width: 70%;
@@ -11,7 +11,10 @@
     color: rgb(232, 226, 226);
     box-shadow: rgb(234, 204, 168);
     height: 700px;
+     font-family: 'Courier New', Courier, monospace; 
     
+    /* font-family: 'Harry Potter', sans-serif; */
+                                                
 }
 ul{
     list-style: none;
@@ -20,7 +23,7 @@ ul{
 .ques li{
     background-color: rgb(9, 5, 5);
     padding: 16px;
-    border: 3px solid rgb(250, 248, 248);
+    border: 3px solid rgb(242, 243, 239);
     border-radius: 10px;
     font-size: 25px;
     margin-top: 40px;
@@ -64,13 +67,13 @@ button{
 
 }
 .App h2{
-    font-size: 2rem;
+    font-size: 2em;
     /* margin-left: 43rem; */
     text-align: center;
 }
 .question-card h2{
     margin-left: 2px;
-    color: rgb(8, 9, 9);
+    color: rgb(11, 14, 14);
 }
 .final-results h2 {
     margin-left: 20px;
@@ -80,6 +83,7 @@ button{
     margin-left: 20px;
     color: black;
 }
+
 
 
 

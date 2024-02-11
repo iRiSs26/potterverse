@@ -6,15 +6,20 @@
   .input-form h2 {
     font-size: 44px;
     margin-bottom: 10px;
+    font-family: "Miltonian Tattoo",serif;
   }
   
   .input-form form {
     display: flex;
     flex-direction: column;
+    font-family: "Miltonian Tattoo",serif;
+    font-size: 20px;
+    margin-top: 30px;
   }
   
   .input-form label {
     margin-bottom: 5px;
+    font-family: "Miltonian Tattoo",serif;
   }
   
   .input-form input,
@@ -23,33 +28,51 @@
     padding: 5px;
     width: 80rem;
     height: 100px;
+    font-family: "Miltonian Tattoo",serif;
+    font-size: 20px;
   }
   
   .input-form button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
+   
+    background-color: #eee8e8;
+    color: #1d1b1b;
     border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 10px;
     cursor: pointer;
-    width: 80rem;
+    /* border-radius: 5px; */
+    width: 200px;
+    height: 50px;
+    font-family: "Miltonian Tattoo",serif;
+    
   }
   
   .input-form button:hover {
-    background-color: #0056b3;
+    background-color: #41464a;
   }
   
   .previous-chats {
-    margin-top: 20px;
+    margin-top: 40px;
+    font-family: "Miltonian Tattoo",serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    
   }
   
   .previous-chats h2 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 10px;
+    
   }
   
   .previous-chats ul {
     list-style-type: none;
     padding: 0;
+    font-size: large;
   }
   
   .previous-chats li {

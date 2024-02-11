@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import logo from './assets/th1.jpg';
-import logo1 from './rec15.jpg';
+import logo1 from './assets/rec15.jpg';
 import './Fic.css';
 import { NavLink } from 'react-router-dom';
 
