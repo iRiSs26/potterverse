@@ -86,7 +86,7 @@ function Fic() {
            
             <div className='navigation-bar'>
                 <NavLink to="/quiz">Quiz</NavLink>
-                <NavLink to="/info">Character Quotient</NavLink>
+                <NavLink to="/about">Character Quotient</NavLink>
                 <NavLink to="/news">News</NavLink>
                 <NavLink to="/fic">FicFathom</NavLink>
                 <NavLink to="#">Chamber of Chat</NavLink>
@@ -94,7 +94,7 @@ function Fic() {
             </div>
             <div className="text-overlay">
                 <h1>Welcome</h1>
-                <p>Embark on a journey through the hallowed halls of Hogwarts as you delve into the lives of your favorite characters. From the courageous Harry Potter himself to the clever Hermione Granger and the loyal Ron Weasley, each character has a tale as captivating as a spell cast by Professor Dumbledore.</p>
+                <p>Welcome to our enchanted Fanfiction Hub! Here, you can weave your own spells and share your unique tales set in the mystical world of Harry Potter. Whether you're a seasoned wordsmith or just beginning your journey, this is your chance to let your imagination soar..</p>
                 <NavLink to='#' className="btn">Read more...</NavLink>
             </div>
 
@@ -136,6 +136,34 @@ function Fic() {
                 {/* <button onClick={handleDeleteRecentChat}>Delete Recent Chat</button> */}
 
             </div>
+            <footer className='footer'>
+            <div className='containerf'>
+                <div className='row'>
+                    <div className='footer-col'>
+                        <h4>ABOUT US</h4>
+                        <ul>
+                            <li><NavLink to='#'>OUR SERVICES</NavLink></li>
+                            <li><NavLink to='#'>PRIVACY POLICY</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>GET HELP</h4>
+                        <ul>
+                            <li><NavLink to='#'>FAQ</NavLink></li>
+                            <li><NavLink to='#'>KNOW MORE</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>CONTACT US</h4>
+                        <ul>
+                            <li><NavLink to='#'>INSTAGRAM</NavLink></li>
+                            <li><NavLink to='#'>TELEGRAM</NavLink></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
         </>
     );
 }

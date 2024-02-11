@@ -79,25 +79,7 @@ function Quiz() {
       ];
 
 
-// const optionClicked=(isCorrect)=>{
-//     if(isCorrect){
-//         setScore(score+1);
-//     }
 
-//     if (currentQuestion + 1 < questions.length) {
-//         setCurrentQuestion(currentQuestion + 1);
-//       } else {
-//         setFinalResults(true);
-//       }
-// };
-
-// const restartGame = () => {
-//     setScore(0);
-//     setCurrentQuestion(0);
-//     setFinalResults(false);
-//   };
-
-// --------------
 
 const shuffleArray = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
@@ -205,24 +187,24 @@ const restartGame = () => {
             <div className='containerf'>
                 <div className='row'>
                     <div className='footer-col'>
-                        <h4>About us</h4>
+                        <h4>ABOUT US</h4>
                         <ul>
-                            <li><NavLink to='#'>Our Services</NavLink></li>
-                            <li><NavLink to='#'>Privacy Policy</NavLink></li>
+                            <li><NavLink to='#'>OUR SERVICES</NavLink></li>
+                            <li><NavLink to='#'>PRIVACY POLICY</NavLink></li>
                         </ul>
                     </div>
                     <div className='footer-col'>
-                        <h4>Get Help</h4>
+                        <h4>GET HELP</h4>
                         <ul>
                             <li><NavLink to='#'>FAQ</NavLink></li>
-                            <li><NavLink to='#'>Know More</NavLink></li>
+                            <li><NavLink to='#'>KNOW MORE</NavLink></li>
                         </ul>
                     </div>
                     <div className='footer-col'>
-                        <h4>Contact Us</h4>
+                        <h4>CONTACT US</h4>
                         <ul>
-                            <li><NavLink to='#'>Instagram</NavLink></li>
-                            <li><NavLink to='#'>Telegram</NavLink></li>
+                            <li><NavLink to='#'>INSTAGRAM</NavLink></li>
+                            <li><NavLink to='#'>TELEGRAM</NavLink></li>
                         </ul>
                     </div>
                 </div>

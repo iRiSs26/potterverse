@@ -107,33 +107,34 @@ function New1() {
 
        
 
-<footer className='footer'>
+        <footer className='footer'>
             <div className='containerf'>
                 <div className='row'>
                     <div className='footer-col'>
-                        <h4>About us</h4>
+                        <h4>ABOUT US</h4>
                         <ul>
-                            <li><NavLink to='#'>Our Services</NavLink></li>
-                            <li><NavLink to='#'>Privacy Policy</NavLink></li>
+                            <li><NavLink to='#'>OUR SERVICES</NavLink></li>
+                            <li><NavLink to='#'>PRIVACY POLICY</NavLink></li>
                         </ul>
                     </div>
                     <div className='footer-col'>
-                        <h4>Get Help</h4>
+                        <h4>GET HELP</h4>
                         <ul>
                             <li><NavLink to='#'>FAQ</NavLink></li>
-                            <li><NavLink to='#'>Know More</NavLink></li>
+                            <li><NavLink to='#'>KNOW MORE</NavLink></li>
                         </ul>
                     </div>
                     <div className='footer-col'>
-                        <h4>Contact Us</h4>
+                        <h4>CONTACT US</h4>
                         <ul>
-                            <li><NavLink to='#'>Instagram</NavLink></li>
-                            <li><NavLink to='#'>Telegram</NavLink></li>
+                            <li><NavLink to='#'>INSTAGRAM</NavLink></li>
+                            <li><NavLink to='#'>TELEGRAM</NavLink></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
+        
         </>
 
         
