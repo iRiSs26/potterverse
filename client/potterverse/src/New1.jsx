@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './New1.css'
 import logo from './assets/th1.jpg';
-import logo1 from './wallp.jpg'
-import logo2 from './rec17.jpg';
+import logo1 from './assets/wallp.jpg'
+import logo2 from './assets/rec17.jpg';
 import logo3 from './assets/rec18.jpg';
-import logo4 from './rec15.jpg';
-import logo5 from './rec14.jpg';
-import logo6 from './wal.jpg';
-import logo7 from './rec16.jpg';
+import logo4 from './assets/rec15.jpg';
+import logo5 from './assets/rec14.jpg';
+import logo6 from './assets/wal.jpg';
+import logo7 from './assets/rec16.jpg';
 import { NavLink } from 'react-router-dom';
 function New1() {
     const [count, setCount] = useState(0)

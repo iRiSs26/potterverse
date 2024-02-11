@@ -1,60 +1,13 @@
 import { useState } from 'react';
 import './About.css';
 import logo from './assets/th1.jpg'
-import logo1 from './wal.jpg'
-import logo2 from './wal.jpg';
+import logo1 from './assets/wal.jpg'
+import logo2 from './assets/wal.jpg';
 import React,{Component} from 'react';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 function About() {
-// ----------------------------------
-// const charactersList = document.getElementById('charactersList');
-// const searchBar = document.getElementById('searchBar');
-// // const [characters, setCharacters] = useState(null);
-// let hpCharacters = [];
 
-// searchBar.addEventListener('keyup', (e) => {
-//     const searchString = e.target.value.toLowerCase();
-
-//     const filteredCharacters = hpCharacters.filter((character) => {
-//         return (
-//             character.name.toLowerCase().includes(searchString) ||
-//             character.house.toLowerCase().includes(searchString)
-//         );
-//     });
-//     displayCharacters(filteredCharacters);
-// });
-
-// const loadCharacters = async () => {
-//     try {
-//         const res = await fetch('https://hp-api.onrender.com/api/characters');
-//         hpCharacters = await res.json();
-//         displayCharacters(hpCharacters);
-//     } catch (err) {
-//         console.error(err);
-//     }
-// };
-
-// const displayCharacters = (characters) => {
-//     const htmlString =  characters
-//         .map((character) => {
-//             return `
-//             <li class="character">
-//                 <h2>${character.name}</h2>
-//                 <h4>Ancestry:${character.ancestry}</h4>
-//                 <p>House:${character.house}</p>
-//             <h3>Patronus:${character.patronus}</h3>
-                
-//             <img src="${character.image}"></img>
-//             </li>
-//         `;
-//         })
-//         .join('');
-//     charactersList.innerHTML = htmlString;
-// };
-
-// loadCharacters();
-// ---------------------------------------------
 
 useEffect(() => {
     const loadCharacters = async () => {
