@@ -11,7 +11,7 @@
     color: rgb(232, 226, 226);
     box-shadow: rgb(234, 204, 168);
     height: 700px;
-     font-family: 'Courier New', Courier, monospace; 
+    font-family: "Miltonian Tattoo",serif;
     
     /* font-family: 'Harry Potter', sans-serif; */
                                                 
@@ -64,6 +64,7 @@ button{
     font-size: 40px;
     /* margin-left: 30rem; */
     text-align: center;
+    font-family: "Harry Potter",serif;
 
 }
 .App h2{
@@ -74,6 +75,7 @@ button{
 .question-card h2{
     margin-left: 2px;
     color: rgb(11, 14, 14);
+    
 }
 .final-results h2 {
     margin-left: 20px;
@@ -83,9 +85,18 @@ button{
     margin-left: 20px;
     color: black;
 }
+.footer{
+    font-family: "Harry Potter",serif;
+}
+.footer-col{
+    margin-left: 40px;
+    margin-top: 20px;
+    
+}
 
-
-
+.text-overlay h1{
+    font-family: "Harry Potter",serif
+}
 
 
 

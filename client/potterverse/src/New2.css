@@ -137,6 +137,7 @@ ul{
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
+    
 }
 .footer-col h4::before{
     content: '';
@@ -171,4 +172,11 @@ ul{
 }
 .right-side{
     font-size: 3rem;
+}
+.content h1{
+    font-family: "Miltonian Tattoo",serif;
+font-size: 27px;
+}
+.latest{
+    font-family: "Miltonian Tattoo",serif;
 }

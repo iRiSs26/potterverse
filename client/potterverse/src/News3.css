@@ -1,5 +1,6 @@
 .patronus-image {
     width: 100%;
+    opacity: 50%;
     max-height: 100vh; /* Set maximum height to 100% of viewport height */
 }
 
@@ -28,9 +29,12 @@
 .image-with-text p{
     font-size: 26px;
     margin-top: 4rem;
+    
+   
 }
 .image-with-text h1{
     margin-bottom: 4rem;
+    font-family: "Harry Potter";
 }
 .image-with-text img{
     width: 40rem;
@@ -44,3 +48,5 @@
     padding-bottom: 5px; /* Adjust the spacing between the text and the underline */
     margin-bottom: 10px; /* Adjust the spacing between the headings */
 }
+
+    

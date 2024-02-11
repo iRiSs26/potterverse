@@ -79,7 +79,7 @@ return (
             <div className='logo1'>
                 <div className="text-overlay">
                     <h1>Welcome</h1>
-                    <p>Grab your wand, don your robes, and prepare to immerse yourself in a world where anything is possible. Are you ready to prove your magical prowess?</p>
+                    <p>Dive into the captivating universe of Harry Potter and explore our character cards! Unlock the secrets of your favorite wizards and witches as you journey through their enchanting tales. Start your magical adventure now</p>
                     <NavLink to='#' className="btn">Get to know them...</NavLink>
                 </div>
                 <img src={logo1} alt="Logo1" />
@@ -99,6 +99,35 @@ return (
             </div>
             <ul id="charactersList"></ul>
           </div>   
+
+          <footer className='footer'>
+            <div className='containerf'>
+                <div className='row'>
+                    <div className='footer-col'>
+                        <h4>ABOUT US</h4>
+                        <ul>
+                            <li><NavLink to='#'>OUR SERVICES</NavLink></li>
+                            <li><NavLink to='#'>PRIVACY POLICY</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>GET HELP</h4>
+                        <ul>
+                            <li><NavLink to='#'>FAQ</NavLink></li>
+                            <li><NavLink to='#'>KNOW MORE</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>CONTACT US</h4>
+                        <ul>
+                            <li><NavLink to='#'>INSTAGRAM</NavLink></li>
+                            <li><NavLink to='#'>TELEGRAM</NavLink></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
        
 
         </>

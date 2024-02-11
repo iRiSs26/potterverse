@@ -37,7 +37,7 @@ function New2() {
                 <img src={logo1} alt="Logo1" />
             </div>
             <div className='latest'>
-                Lastest and greatest news
+                Lastest and Greatest News
             </div>
             <section>
                 <div className='container'>
@@ -79,32 +79,33 @@ function New2() {
             </section>
             {/* Add more sections with NavLink as needed */}
             <footer className='footer'>
-                <div className='containerf'>
-                    <div className='row'>
-                        <div className='footer-col'>
-                            <h4>About us</h4>
-                            <ul>
-                                <li><NavLink to='#'>Our Services</NavLink></li>
-                                <li><NavLink to='#'>Privacy Policy</NavLink></li>
-                            </ul>
-                        </div>
-                        <div className='footer-col'>
-                            <h4>Get Help</h4>
-                            <ul>
-                                <li><NavLink to='#'>FAQ</NavLink></li>
-                                <li><NavLink to='#'>Know More</NavLink></li>
-                            </ul>
-                        </div>
-                        <div className='footer-col'>
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li><NavLink to='#'>Instagram</NavLink></li>
-                                <li><NavLink to='#'>Telegram</NavLink></li>
-                            </ul>
-                        </div>
+            <div className='containerf'>
+                <div className='row'>
+                    <div className='footer-col'>
+                        <h4>ABOUT US</h4>
+                        <ul>
+                            <li><NavLink to='#'>OUR SERVICES</NavLink></li>
+                            <li><NavLink to='#'>PRIVACY POLICY</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>GET HELP</h4>
+                        <ul>
+                            <li><NavLink to='#'>FAQ</NavLink></li>
+                            <li><NavLink to='#'>KNOW MORE</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className='footer-col'>
+                        <h4>CONTACT US</h4>
+                        <ul>
+                            <li><NavLink to='#'>INSTAGRAM</NavLink></li>
+                            <li><NavLink to='#'>TELEGRAM</NavLink></li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
+        
 
 
         
