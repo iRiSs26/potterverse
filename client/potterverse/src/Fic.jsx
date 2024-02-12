@@ -8,6 +8,9 @@ import logo1 from './assets/rec15.jpg';
 import './Fic.css';
 import { NavLink } from 'react-router-dom';
 
+const baseURL = "https://irisapi.onrender.com";
+// const baseURL = "http://localhost:5000"
+
 function Fic() {
     const [formData, setFormData] = useState({
         title: '',
@@ -28,7 +31,7 @@ function Fic() {
     const handleSubmit = async event => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/developer/chats', formData);
+            const response = await axios.post(`${baseURL}/api/developer/chats`, formData);
             console.log('Chat created:', response.data);
             alert('Chat created successfully!');
             
@@ -40,31 +43,16 @@ function Fic() {
             fetchChats();
         } catch (error) {
             console.error('Error creating chat:', error);
-            // alert('Error creating chat. Please try again.');
+        
         }
     };
 
-// -------------------
 
-
-// const handleDeleteRecentChat = async () => {
-//     try {
-//         const response = await axios.delete('http://localhost:5000/api/developer/chats/recent');
-//         console.log('Recent chat deleted:', response.data);
-//         alert('Recent chat deleted successfully!');
-//         fetchChats();
-//     } catch (error) {
-//         console.error('Error deleting recent chat:', error);
-//         alert('Error deleting recent chat. Please try again.');
-//     }
-// };
-    
-    // ----------------------------
 
     useEffect(() => {
         async function fetchChats() {
             try {
-                const response = await axios.get('http://localhost:5000/api/developer/chats');
+                const response = await axios.get(`${baseURL}/api/developer/chats)`);
                 setChats(response.data);
             } catch (error) {
                 console.error('Error fetching chats:', error);
