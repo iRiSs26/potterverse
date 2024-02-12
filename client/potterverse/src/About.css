@@ -80,6 +80,12 @@ h1 {
         'name image'
         'house image';
     text-align: left;
+    transition: 400ms;
+}
+
+.character:hover{
+    transform: scale(1.1);
+    
 }
 
 .character > h2 {
