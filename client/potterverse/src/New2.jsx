@@ -25,7 +25,7 @@ function New2() {
                 <NavLink to="/about">Character Quotient</NavLink>
                 <NavLink to="/news">News</NavLink>
                 <NavLink to="/fic">FicFathom</NavLink>
-                <NavLink to="#">Chamber of Chat</NavLink>
+                <NavLink to="/ChatBox">Chamber of Chat</NavLink>
                 <NavLink to="/latest">Patronus</NavLink>
             </div>
             <div className="text-overlay">
